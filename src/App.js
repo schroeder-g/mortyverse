@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import axios from 'axios'
-import Styled from 'styled-components'
+import styled from 'styled-components'
 import './App.css';
 
 function App() {
