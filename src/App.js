@@ -5,6 +5,17 @@ import Styled from 'styled-components'
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    axios.get('https://rickandmortyapi.com/api/character')
+    .then(res => {
+      console.log(res.data.results)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }, []);
+
   return (
     <div className="App">
      {/* Create Nav component */}
