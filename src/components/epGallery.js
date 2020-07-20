@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function CharGallery({data}) {
-   console.log(data)
+export default function EpGallery(props) {
+   console.log(props.data)
     return (
         <div>
             {/* data needs to be mapped through */}
